@@ -11,8 +11,9 @@ fn main()
 {
     let data: Vec<f64> = vec![5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0];
 
-    let p = 75.0; // 75th percentile
+    let p = 75.0; 
     let result = percentile(&data, p);
 
     println!("{}th Percentile = {}", p, result);
 }
+
