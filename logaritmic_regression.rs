@@ -38,7 +38,6 @@ fn correlation(x: &Vec<f64>, y: &Vec<f64>) -> f64
     covariance(x, y) / (std_dev(x) * std_dev(y))
 }
 
-// Linear regression: y = b*x + a
 fn linear_regression(x: &Vec<f64>, y: &Vec<f64>) -> (f64, f64, f64) 
 {
     let mx = mean(x);
@@ -60,7 +59,6 @@ fn linear_regression(x: &Vec<f64>, y: &Vec<f64>) -> (f64, f64, f64)
     (b, a, r2)
 }
 
-// Logarithmic regression: y = a + b ln(x)
 fn logarithmic_regression(x: &Vec<f64>, y: &Vec<f64>) -> (f64, f64) 
 {
     let mut ln_x = Vec::new();
@@ -82,3 +80,4 @@ fn main()
     println!("Logarithmic Regression Model:");
     println!("y = {} + {} ln(x)", a, b);
 }
+
