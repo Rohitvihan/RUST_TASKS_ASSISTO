@@ -69,10 +69,11 @@ fn exponential_regression(x: &Vec<f64>, y: &Vec<f64>) -> (f64, f64)
 
 fn main() {
     let x: Vec<f64> = vec![1.0, 2.0, 3.0, 4.0, 5.0];
-    let y: Vec<f64> = vec![2.7, 7.4, 20.1, 54.6, 148.4]; // approx e^x
+    let y: Vec<f64> = vec![2.7, 7.4, 20.1, 54.6, 148.4]; 
 
     let (a, b) = exponential_regression(&x, &y);
 
     println!("Exponential Regression Model:");
     println!("y = {} * e^({} x)", a, b);
 }
+
