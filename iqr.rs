@@ -1,7 +1,7 @@
 fn quartiles(arr: &Vec<f64>) -> (f64, f64, f64) 
 {
     let mut v = arr.clone();
-    v.sort_by(|a, b| a.partial_cmp(b).unwrap());
+    v.sort_by(|a, b| a.total_cmp(b).unwrap());
 
     let n = v.len();
 
@@ -45,3 +45,4 @@ fn main() {
 
     println!("Interquartile Range (IQR) = {}", result);
 }
+
